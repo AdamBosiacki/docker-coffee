@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a coffee</title>
+    <script type="text/javascript" src="addscript.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <form name="form2" class="signupForm">
+    Name: <br>
+    <input type="text" name="field1" class="inputFields"/><br/>
+    Desc: <br>
+    <input type="text" name="field2" class="inputFields"/><br/>
+    % of coffee: <br>
+    <input type="text" name="field3" class="inputFields"/><br/>
+    % of milk: <br>
+    <input type="text" name="field4" class="inputFields"/><br/>
+    Other: <br>
+    <input type="text" name="field5" class="inputFields"/><br/>
+    <button type="button" id="join-btn" onClick="postJSON(document.forms['form2']['field1'].value,document.forms['form2']['field2'].value,document.forms['form2']['field3'].value,document.forms['form2']['field4'].value,document.forms['form2']['field5'].value )">
+    Add a coffee</button><br/>
+    </form>
+</body>
+</html>
